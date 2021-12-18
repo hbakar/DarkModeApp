@@ -13,18 +13,24 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
      
-       // eğer dark mod seçilmişse buton rengini değiştirdik..
-        let userInterfaceStyle = traitCollection.userInterfaceStyle
-        if userInterfaceStyle == .dark
-        {
-            changeButton.tintColor = .white
-        }
-        else
-        {
-            changeButton.tintColor = .blue
-        }
+       
     }
 
+    //anlık değişikliği görebilmek için viewWillAppear altında kullandık
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+        // eğer dark mod seçilmişse buton rengini değiştirdik..
+         let userInterfaceStyle = traitCollection.userInterfaceStyle
+         if userInterfaceStyle == .dark
+         {
+             changeButton.tintColor = .white
+         }
+         else
+         {
+             changeButton.tintColor = .blue
+         }
+    }
 
 }
 
