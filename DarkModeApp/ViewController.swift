@@ -9,6 +9,8 @@
 /*
  ÖNEMLİ**
  
+ En son ekledik v3 te dikkat -> Mutlaka Tema Dark olsun Dedik
+ 
  info.plist'e User Interface Style yazıp -> karşısına Dark yazdık..
  böyle yaparsak -> sadece Dark Mode'da çalışır ***
  
