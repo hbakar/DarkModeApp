@@ -9,9 +9,20 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var changeButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+     
+       // eğer dark mod seçilmişse buton rengini değiştirdik..
+        let userInterfaceStyle = traitCollection.userInterfaceStyle
+        if userInterfaceStyle == .dark
+        {
+            changeButton.tintColor = .white
+        }
+        else
+        {
+            changeButton.tintColor = .blue
+        }
     }
 
 
